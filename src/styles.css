@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--black);
+    font-family: var(--principal-font);
+}
+
+.container {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+:root {
+    --black: #121212;
+    --white: #fff;
+    --gray: #c2c2c2;
+    --darkGray: #666666;
+    --purple: #c92bb7;
+    --orange: #ff7300;
+
+    --principal-font: Arial, Helvetica, sans-serif
+}

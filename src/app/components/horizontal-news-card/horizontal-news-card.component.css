@@ -1,0 +1,22 @@
+.news-img-example {
+    max-width: 220px;
+    min-height: 120px;
+    min-width: 220px;
+    max-height: 120px;
+    margin-right: 15px;
+}
+
+.horizontal-news-card {
+    display: flex;
+}
+
+.horizontal-news-card h3 {
+    margin-top: 10px;
+    color: var(--gray);
+}
+
+.horizontal-news-card span {
+    text-align: justify;
+    color: var(--darkGray);
+}
+
