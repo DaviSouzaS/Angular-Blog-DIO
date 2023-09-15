@@ -1,0 +1,17 @@
+.titile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titile-box hr {
+    width: 90%;
+    max-width: 1500px;
+}
+
+.titile-box h1 {
+    font-family: var(--principal-font);
+    color: var(--white);
+    font-size: 150px;
+    margin: 20px 0;
+}

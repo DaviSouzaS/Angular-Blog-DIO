@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .header-container {
@@ -8,8 +9,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    width: 85%;
+    max-width: 1500px;
+    width: 90%;
 }
 
 .user-icon > p {
@@ -28,6 +29,7 @@ header {
     height: 50px;
     background: linear-gradient(45deg, var(--purple), transparent), radial-gradient(var(--orange), transparent);
     border-radius: 100%;
+    margin-right: 30px;
 }
 
 .header-nav {
@@ -47,4 +49,18 @@ header {
 .header-nav > a:hover {
     color: var(--white);
     transition-duration: 0.25s;
+}
+
+.header-links {
+    margin: 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-links svg {
+    fill: var(--gray);
+}
+
+.header-links svg:hover {
+    fill: var(--white);
 }
