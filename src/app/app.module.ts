@@ -9,6 +9,7 @@ import { PrincipalNewsCardComponent } from './components/principal-news-card/pri
 import { HorizontalNewsCardComponent } from './components/horizontal-news-card/horizontal-news-card.component';
 import { VerticalNewsCardComponent } from './components/vertical-news-card/vertical-news-card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NewsPageComponent } from './pages/news-page/news-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './pages/home/home.component';
     PrincipalNewsCardComponent,
     HorizontalNewsCardComponent,
     VerticalNewsCardComponent,
-    HomeComponent
+    HomeComponent,
+    NewsPageComponent
   ],
   imports: [
     BrowserModule,

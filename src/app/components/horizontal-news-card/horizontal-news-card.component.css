@@ -15,6 +15,11 @@
     color: var(--gray);
 }
 
+.horizontal-news-card h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .horizontal-news-card span {
     text-align: justify;
     color: var(--darkGray);

@@ -4,41 +4,25 @@
 
 <main class="principal-content container">
 
-    <app-principal-news-card name="Conferência de Imprensa da ONU" date="Setembro, 25, 2023" description="A ONU realiza uma coletiva de imprensa para discutir as últimas atualizações sobre crises humanitárias globais." image="https://livredetrabalhoinfantil.org.br/wp-content/uploads/2016/09/ONU.jpg"></app-principal-news-card>
+  <div *ngFor="let card of principalCard">
+        <app-principal-news-card [data]="card"></app-principal-news-card>
+  </div>
 
-    <aside class="aside-news">
-
-        <app-horizontal-news-card name="Eleições Presidenciais" date="Novembro, 05, 2024" image="https://www.tse.jus.br/imagens/fotos/eleicoes-suplementares-05-05.2023/@@images/22b69bfe-f6ab-4ce7-96ba-0619520b5abb.jpeg"></app-horizontal-news-card>
-
-        <hr>
-
-        <app-horizontal-news-card name="Descoberta Científica Revolucionária" date="Outubro, 12, 2023" image="https://veja.abril.com.br/wp-content/uploads/2020/05/cientista-1-1.jpg?quality=90&strip=info&w=900&h=600&crop=1"></app-horizontal-news-card>
-
-        <hr>
-
-        <app-horizontal-news-card name="Conferência de Mudanças Climáticas" date="Dezembro, 01, 2023" image="https://www.ticketlog.com.br/blog/wp-content/uploads/2016/01/Post-3-VOC%C3%8A-SABE-O-QUE-S%C3%83O-AS-MUDAN%C3%87AS-CLIM%C3%81TICAS.jpg"></app-horizontal-news-card>
-
-    </aside>
+  <aside class="aside-news">
+    <div *ngFor="let card of horizontalCards">
+        <app-horizontal-news-card [data]="card"></app-horizontal-news-card>
+    </div>
+  </aside>
 </main>
 
 <div class="other-news-box">
-    <div class="container other-news-container">
+  <div class="container other-news-container">
+    <p>PILIHAN EDITOR</p>
 
-        <p>PILIHAN EDITOR</p>
-
-        <div class="other-news">
-            <app-vertical-news-card name="Ataque Cibernético em Grande Escala" date="Novembro, 18, 2023" image="https://info.varonis.com/hubfs/Varonis_June2021/Images/ataque-cibernetico-650x417.jpg" description="Um ataque cibernético massivo afeta empresas e governos em todo o mundo, os danos são incalculáveis."></app-vertical-news-card>
-
-            <app-vertical-news-card name="Desastre Natural em Nova Orleans" date="Setembro, 10, 2023" description="Um furacão devastador atinge a cidade de Nova Orleans, causando evacuações em massa." image="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/46111_9039CECFD5A0468C.jpg?w=1200&h=675&crop=1"></app-vertical-news-card>
-
-            <app-vertical-news-card name="Greve de Professores em São Paulo" date="Outubro, 03, 2023" description="Professores em várias cidades entram em greve em busca de melhores condições salariais e de trabalho." image="https://sismmac.org.br/wp-content/uploads/2023/08/sismmac-encerra-greve-forte-21agosto23.jpg"></app-vertical-news-card>
-
-            <app-vertical-news-card name="Lançamento de Novo Satélite Espacial" date="Setembro, 30, 2023" description="Um novo satélite espacial é lançado para melhorar a comunicação global e a pesquisa científica." image="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/os-satelites-artificiais-sao-colocados-em-orbita-ao-redor-terra-57f8feb716623.jpg"></app-vertical-news-card>
-
-            <app-vertical-news-card name="Descoberta Arqueológica Importante" date="Novembro, 08, 2023" description="Arqueólogos fazem uma descoberta significativa de artefatos antigos em uma escavação no Egito." image="https://s2.glbimg.com/7PLOl2-N9RiSOtvqkwGTnZao4UQ=/512x320/smart/e.glbimg.com/og/ed/f/original/2016/01/11/kv9_burialchamber.jpg"></app-vertical-news-card>
-
-            <app-vertical-news-card name="Protestos em Massa por Direitos" date="Outubro, 15, 2023" description="Milhares de manifestantes marcham em todo o país em busca de igualdade e justiça social." image="https://ichef.bbci.co.uk/news/640/cpsprodpb/14BF9/production/_110358948_hi058865757.jpg"></app-vertical-news-card>
+    <div class="other-news">
+        <div *ngFor="let card of verticalCards">
+            <app-vertical-news-card [data]="card"></app-vertical-news-card>
         </div>
-
     </div>
+  </div>
 </div>
