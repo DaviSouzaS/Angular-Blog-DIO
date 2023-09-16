@@ -1,0 +1,23 @@
+.img-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.news-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+.news-content > div {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.news-content .news-date {
+    color: var(--darkGray);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

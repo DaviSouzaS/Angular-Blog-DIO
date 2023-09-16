@@ -1,9 +1,15 @@
 <app-header></app-header>
 
-<div>
-    <img src="" alt="">
+<div class="img-box">
+    <img src="{{image}}" alt="news-img">
 </div>
 
-<h1>TITLE</h1>
-
-<p>Description</p>
+<main class="news-content">
+    <div>
+        <h1>{{name}}</h1>
+        
+        <p class="news-date">{{date}}</p>
+        
+        <p>{{description}}</p>
+    </div>
+</main>
