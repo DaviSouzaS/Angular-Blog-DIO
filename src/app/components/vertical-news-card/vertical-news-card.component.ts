@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { iMockData } from 'src/app/pages/home/home.interface';
 
 @Component({
   selector: 'app-vertical-news-card',
@@ -8,16 +9,13 @@ import { Component, Input } from '@angular/core';
 export class VerticalNewsCardComponent {
   
   @Input()
-  name: string = ""
-
-  @Input()
-  date: string = ""
-
-  @Input()
-  description: string = ""
-
-  @Input()
-  image: string = ""
+  data: iMockData = {
+    id: 0, 
+    name: "", 
+    date: "", 
+    description: "", 
+    image: ""
+  }
 
   constructor() {}
 

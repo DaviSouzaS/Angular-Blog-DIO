@@ -25,3 +25,8 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.news-infos h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
