@@ -35,3 +35,8 @@
     align-items: center;
     background-color: var(--white);
 }
+
+.news-infos h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

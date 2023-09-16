@@ -1,16 +1,16 @@
 <div class="vertical-news-card">
 
     <div class="img-box">
-        <img class="news-img-example" src={{image}} alt="news-img">
+        <img class="news-img-example" src={{data.image}} alt="news-img">
     </div>
 
     <div class="news-infos">
 
-        <span>{{date}}</span>
+        <span>{{data.date}}</span>
 
-        <h2>{{name}}</h2>
+        <h2 [routerLink] = "['news-page', data.id]">{{data.name}}</h2>
 
-        <p>{{description}}</p>
+        <p>{{data.description}}</p>
     </div>
 
 

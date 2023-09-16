@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { data } from "../../mock/data"
+import { iMockData } from 'src/app/pages/home/home.interface';
 
 @Component({
   selector: 'app-principal-news-card',
@@ -9,16 +11,13 @@ import { Component, Input } from '@angular/core';
 export class PrincipalNewsCardComponent {
 
   @Input()
-  name: string = ""
-
-  @Input()
-  date: string = ""
-
-  @Input()
-  description: string = ""
-
-  @Input()
-  image: string = ""
+  data: iMockData = {
+    id: 0, 
+    name: "", 
+    date: "", 
+    description: "", 
+    image: ""
+  }
 
   constructor() {}
 
