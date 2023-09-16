@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { data } from "../../mock/data"
 import { iMockData } from 'src/app/pages/home/home.interface';
 
 @Component({
